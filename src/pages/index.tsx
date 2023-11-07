@@ -1,0 +1,47 @@
+import clsx from "clsx";
+import Link from "@docusaurus/Link";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import Layout from "@theme/Layout";
+import HomepageFeatures from "@site/src/components/HomepageFeatures";
+import Heading from "@theme/Heading";
+
+import styles from "./index/index.module.css";
+
+function HomepageHeader() {
+  const { siteConfig } = useDocusaurusContext();
+  return (
+    <header className={clsx(styles.heroBanner)}>
+      <div className="container" style={{ height: 300, paddingTop: 100 }}>
+        <Heading as="h1" className="hero__title" style={{ fontSize: 35 }}>
+          Instant open-source debugging for your applications on Kubernetes
+        </Heading>
+        <p className="hero__subtitle">
+          Learn how to install Pixie, run scripts and write your own playbooks.
+        </p>
+        <div className={styles.buttons}>
+          <Link
+            className="button button--secondary button--lg"
+            to="/docs/intro"
+          >
+            Install Guide
+          </Link>
+        </div>
+      </div>
+    </header>
+  );
+}
+
+export default function Home(): JSX.Element {
+  const { siteConfig } = useDocusaurusContext();
+  return (
+    <Layout
+      title={`Hello from ${siteConfig.title}`}
+      description="Description will go into a meta tag in <head />"
+    >
+      <HomepageHeader />
+      <main>
+        <HomepageFeatures />
+      </main>
+    </Layout>
+  );
+}
