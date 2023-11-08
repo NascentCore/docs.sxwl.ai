@@ -27,7 +27,7 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.ts',
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/NascentCore/docs.sxwl.ai/tree/main/',
         },
       } satisfies Preset.Options,
     ],
@@ -49,7 +49,7 @@ const config: Config = {
           label: 'Documents',
         },
         {
-          href: 'https://github.com/',
+          href: 'https://github.com/NascentCore/3k',
           label: 'GitHub',
           position: 'right',
         },
