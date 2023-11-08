@@ -2,7 +2,6 @@ import clsx from "clsx";
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
-import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import Heading from "@theme/Heading";
 
 import styles from "./index/index.module.css";
@@ -15,9 +14,7 @@ function HomepageHeader() {
         <Heading as="h1" className="hero__title" style={{ fontSize: 35 }}>
           算想未来
         </Heading>
-        <p className="hero__subtitle">
-          算想云 Serverless 大模型训推云服务
-        </p>
+        <p className="hero__subtitle">算想云 Serverless 大模型训推云服务</p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
@@ -35,7 +32,7 @@ export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title={`${siteConfig.title}`}
       description="Description will go into a meta tag in <head />"
     >
       <HomepageHeader />
