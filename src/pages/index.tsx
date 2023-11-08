@@ -13,10 +13,10 @@ function HomepageHeader() {
     <header className={clsx(styles.heroBanner)}>
       <div className="container" style={{ height: 300, paddingTop: 100 }}>
         <Heading as="h1" className="hero__title" style={{ fontSize: 35 }}>
-          Instant open-source debugging for your applications on Kubernetes
+          算想未来
         </Heading>
         <p className="hero__subtitle">
-          Learn how to install Pixie, run scripts and write your own playbooks.
+          算想云使用指南
         </p>
         <div className={styles.buttons}>
           <Link
