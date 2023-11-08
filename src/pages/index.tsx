@@ -23,7 +23,7 @@ function HomepageHeader() {
             className="button button--secondary button--lg"
             to="/docs/intro"
           >
-            Install Guide
+            使用指南
           </Link>
         </div>
       </div>
