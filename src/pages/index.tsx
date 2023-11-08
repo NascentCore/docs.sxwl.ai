@@ -16,7 +16,7 @@ function HomepageHeader() {
           算想未来
         </Heading>
         <p className="hero__subtitle">
-          算想云使用指南
+          算想云 Serverless 大模型训推云服务
         </p>
         <div className={styles.buttons}>
           <Link
@@ -39,9 +39,6 @@ export default function Home(): JSX.Element {
       description="Description will go into a meta tag in <head />"
     >
       <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-      </main>
     </Layout>
   );
 }
