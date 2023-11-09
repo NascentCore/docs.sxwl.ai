@@ -27,14 +27,7 @@ jobs:
       - name: Build Project
         run: |
           yarn build
-          mv build /tmp
-
-  deploy:
-    runs-on: ubuntu-latest
-
-    needs: build
-
-    steps:
+      
       - name: Configure SSH
         env:
           SSH_PRIVATE_KEY: ${{ secrets.DEPLOY }}
@@ -46,6 +39,5 @@ jobs:
 
       - name: Deploy to Hosting Service
         run: |
-          ls -l /tmp/build
-          scp -o StrictHostKeyChecking=no -r /tmp/build/* deploy@sxwl.ai:~/docs.sxwl.ai
+          scp -o StrictHostKeyChecking=no -r build/* deploy@sxwl.ai:~/docs.sxwl.ai
 
