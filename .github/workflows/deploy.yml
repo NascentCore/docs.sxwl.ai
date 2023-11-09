@@ -25,7 +25,10 @@ jobs:
         run: yarn install
 
       - name: Build Project
-        run: yarn build
+        run: |
+          yarn build
+          pwd
+          ls -l
 
   deploy:
     runs-on: ubuntu-latest
@@ -44,5 +47,7 @@ jobs:
 
       - name: Deploy to Hosting Service
         run: |
+          pwd
+          ls -l
           scp -o StrictHostKeyChecking=no -r build/* deploy@sxwl.ai:~/docs.sxwl.ai
 
