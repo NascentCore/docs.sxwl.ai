@@ -3,15 +3,11 @@ import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: '算想未来文档',
-  tagline: '算想未来文档',
+  title: '文档｜算想未来 SXWL.AI',
   favicon: 'img/favicon.ico',
 
-  url: 'https://your-site.example.com',
+  url: 'https://docs.sxwl.ai',
   baseUrl: '/',
-
-  organizationName: '算想未来',
-  projectName: '算想未来文档',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
