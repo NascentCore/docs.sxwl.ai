@@ -45,7 +45,7 @@ const config: Config = {
           label: 'Documents',
         },
         {
-          href: 'https://github.com/NascentCore/3k',
+          href: 'https://github.com/NascentCore/docs.sxwl.ai',
           label: 'GitHub',
           position: 'right',
         },
