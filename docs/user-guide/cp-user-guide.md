@@ -65,4 +65,5 @@ CMD mpirun -np "1" --allow-run-as-root -bind-to none -map-by slot -x NCCL_DEBUG=
 - `FROM` 引入了一个基础环境镜像，里边包含 bert 训练所需的运行环境
 - `RUN` 中将训练所需的数据放到了 dataset 目录下，将数据一起打包到镜像里
 - `CMD` 中指定了镜像拉起后执行的训练程序，并指定了训练数据所在的目录，以及 CKPT 所在的路径
-  
+> CMD 中 mpirun 指定的 -np 参数需与申请的 gpu 资源数量一致，目前暂时只能设置为 1
+
