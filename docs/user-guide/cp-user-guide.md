@@ -34,6 +34,14 @@ sidebar_position: 2
 - `任务类型`：目前支持的任务类型为MPI
 - `终止条件`：可选择自然终止或手动设定运行时长，在设置运行时长到期后如任务未完成，该训练任务将被终止
 ![任务提交参数](../images/task_submit2.png)
+
+以下是一个bert训练任务提交的参数示例，可用于体验任务提交流程：
+- `CKPT路径`: /workspace/ds-experiments
+- `模型保存路径`：/workspace/saved-model
+- `容量`：1024
+- `GPU`：1024
+- `容器镜像`：registry.cn-beijing.aliyuncs.com/sxwl-ai/bert:2023-11-11
+- `任务类型`：MPI
   
 ## 任务详情
 - 训练任务提交后自动进入`任务详情`页面，此时任务进入`运行`状态，点击详情可查看该任务的运行详情（待上线）：
