@@ -19,7 +19,7 @@ sidebar_position: 2
 ![注册算力用户](../images/cp-user-register.png)
 
 ### 登录
-- 打开算想云登录页面 https://llm.sxwl.ai/login，输入注册邮箱和密码，点击登陆
+- 打开算想云登录页面 [https://llm.sxwl.ai/login](https://llm.sxwl.ai/login)，输入注册邮箱和密码，点击登陆
 - 登陆成功后，自动进入`任务提交`页面
 ![任务提交](../images/task_submit.png)
   
