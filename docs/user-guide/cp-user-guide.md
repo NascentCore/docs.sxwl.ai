@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 ---
 
 # 算力用户指南
@@ -14,7 +14,7 @@ sidebar_position: 2
 ### 注册
 - 登录 https://llm.sxwl.ai ，选择`注册`
 ![注册算想云](../images/login.png)
-  
+
 - 选择`算力用户注册`并填写注册相关信息，点击`注册`完成用户注册
 ![注册算力用户](../images/cp-user-register.png)
 
@@ -22,7 +22,7 @@ sidebar_position: 2
 - 打开算想云登录页面 [https://llm.sxwl.ai/login](https://llm.sxwl.ai/login)，输入注册邮箱和密码，点击登陆
 - 登陆成功后，自动进入`任务提交`页面
 ![任务提交](../images/task_submit.png)
-  
+
 ## 提交训练任务
 任务提交页面是算力用户提交训练任务的入口，通过提交训练任务，用户可以直接使用算想云提供的算力进行任务训练，不用操心基础设施以及基础服务的搭建；
 提交训练任务需提供以下信息：
@@ -41,15 +41,15 @@ sidebar_position: 2
 - `GPU`：NVIDIA-A100-SXM4-80GB
 - `容器镜像`：registry.cn-beijing.aliyuncs.com/sxwl-ai/bert:2023-11-11
 - `任务类型`：MPI
-  
+
 ## 任务详情
 - 训练任务提交后自动进入`任务详情`页面，此时任务进入`运行`状态，点击详情可查看该任务的运行详情（待上线）：
 ![任务详情](../images/task_list.png)
-  
+
 - 任务运行完成后，可以看到操作中出现`下载模型`操作，点击`下载模型`弹出模型文件列表，点击链接可进行模型下载
 ![任务完成](../images/task_done.png)
 ![下载模型](../images/download_model.png)
-  
+
 ## 附录一
 > 构建能够运行在算想云上的训练镜像
 
@@ -60,7 +60,7 @@ WORKDIR /workspace
 RUN wget --progress=dot:giga https://sxwl-ai.oss-cn-beijing.aliyuncs.com/hf-datasets/hf_wikitext.tar.gz && \
     mkdir dataset && tar zxvf hf_wikitext.tar.gz --directory dataset && \
     rm hf_wikitext.tar.gz
-    
+
 # Allow editing source file when exec inside the container
 RUN apt-get update --fix-missing && apt-get install -y vim --fix-missing
 COPY *.py ./
