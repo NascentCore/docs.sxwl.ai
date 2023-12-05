@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# 用户指南
+# 使用指南
 
 ## 名词解释
 - `算想云`: llm.sxwl.ai，Serverless（无服务器）大模型训练云服务
