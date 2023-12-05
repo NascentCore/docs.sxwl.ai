@@ -10,17 +10,29 @@ function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <header className={clsx(styles.heroBanner)}>
-      <div className="container" style={{ height: 300, paddingTop: 100 }}>
+      <div className="container" style={{ height: 200, paddingTop: 100 }}>
         <Heading as="h1" className="hero__title" style={{ fontSize: 35 }}>
-          算想未来
+          算想云 Serverless 大模型训推云服务
         </Heading>
-        <p className="hero__subtitle">算想云 Serverless 大模型训推云服务</p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/user-guide/cps-user-guide"
+            to="/docs/user-guide/cp-user-guide"
           >
-            使用指南
+            算想云使用指南
+          </Link>
+        </div>
+      </div>
+      <div className="container" style={{ height: 200, paddingTop: 100 }}>
+        <Heading as="h1" className="hero__title" style={{ fontSize: 35 }}>
+          三千平台：私有化部署云原生大模型训推软件平台
+        </Heading>
+        <div className={styles.buttons}>
+          <Link
+            className="button button--secondary button--lg"
+            to="/docs/3k"
+          >
+            三千平台使用指南
           </Link>
         </div>
       </div>
