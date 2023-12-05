@@ -19,7 +19,7 @@ sidebar_position: 2
 ![注册算力用户](../images/cp-user-register.png)
 
 ### 登录
-- 打开算想云登录页面 https://llm.sxwl.ai/login，输入注册邮箱和密码，点击登陆
+- 打开算想云登录页面 [https://llm.sxwl.ai/login](https://llm.sxwl.ai/login)，输入注册邮箱和密码，点击登陆
 - 登陆成功后，自动进入`任务提交`页面
 ![任务提交](../images/task_submit.png)
   
@@ -36,10 +36,9 @@ sidebar_position: 2
 ![任务提交参数](../images/task_submit2.png)
 
 以下是一个bert训练任务提交的参数示例，可用于体验任务提交流程：
-- `CKPT路径`: /workspace/ds-experiments
-- `模型保存路径`：/workspace/saved-model
-- `容量`：1024
-- `GPU`：1024
+- `CKPT路径`: /workspace/ds-experiments `容量`：1024
+- `模型保存路径`：/workspace/saved-model `容量`：1024
+- `GPU`：NVIDIA-A100-SXM4-80GB
 - `容器镜像`：registry.cn-beijing.aliyuncs.com/sxwl-ai/bert:2023-11-11
 - `任务类型`：MPI
   
