@@ -17,7 +17,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/user-guide/cp-user-guide"
+            to="/docs/cloud/cp-user-guide"
           >
             算想云使用指南
           </Link>
