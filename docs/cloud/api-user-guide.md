@@ -93,7 +93,7 @@ body示例：
 | pretrainedModelPath | String | 可选   | 预训练基底模型对应路径 | /sixpen_models/chatlm3                             | 预缓存的开源模型路径                  |
 | runCommand          | String | 可选   | 训练启动命令      | python run.py                                      |                             |
 | callbackUrl         | String | 可选   | 回调接口url     | [https://domain/callback](https://domain/callback) | 任务完成或失败时算想云会调用回调接口来通知用户     |
-| env                 | Json   | 可选   | 环境变量参数      | {\"OPEN_NODE_TOKEN\": \"xxxxx\"}                   | 环境变量会作用于训练任务pod中，由用户自行设置和使用 |
+| env                 | Json   | 可选   | 环境变量参数      | `{\"OPEN_NODE_TOKEN\": \"xxxxx\"}`                 | 环境变量会作用于训练任务pod中，由用户自行设置和使用 |
 
 http状态返回代码
 
