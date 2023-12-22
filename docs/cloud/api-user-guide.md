@@ -84,16 +84,16 @@ body示例：
 
 可选参数：
 
-| 参数                  | 类型     | 是否必选 | 描述          | 举例                                         | 备注                          |
-|---------------------|--------|------|-------------|--------------------------------------------|-----------------------------|
-| stopTime            | String | 可选   | 设定时常以分钟为单位  | 5                                          |                             |
-| datasetName         | String | 可选   | 挂载路径名称      | train-dataset                              | 预缓存的开源数据集名字                 |
-| datasetPath         | String | 可选   | dataset挂载路径 | /sixpen_models/train_outputs/test_10059997 | 预缓存的开源数据集路径                 |
-| pretrainedModelName | String | 可选   | 预训练基底模型     | chatglm3-6b                                | 预缓存的开源模型名字                  |
-| pretrainedModelPath | String | 可选   | 预训练基底模型对应路径 | /sixpen_models/chatlm3                     | 预缓存的开源模型路径                  |
-| runCommand          | String | 可选   | 训练启动命令      | python run.py                              |                             |
-| callbackUrl         | String | 可选   | 回调接口url     | https://domain/callback                    | 任务完成或失败时算想云会调用回调接口来通知用户     |
-| env                 | Json   | 可选   | 环境变量参数      | {"OPEN_NODE_TOKEN": "xxxxx"}               | 环境变量会作用于训练任务pod中，由用户自行设置和使用 |
+| 参数                  | 类型     | 是否必选 | 描述          | 举例                                                 | 备注                          |
+|---------------------|--------|------|-------------|----------------------------------------------------|-----------------------------|
+| stopTime            | String | 可选   | 设定时常以分钟为单位  | 5                                                  |                             |
+| datasetName         | String | 可选   | 挂载路径名称      | train-dataset                                      | 预缓存的开源数据集名字                 |
+| datasetPath         | String | 可选   | dataset挂载路径 | /sixpen_models/train_outputs/test_10059997         | 预缓存的开源数据集路径                 |
+| pretrainedModelName | String | 可选   | 预训练基底模型     | chatglm3-6b                                        | 预缓存的开源模型名字                  |
+| pretrainedModelPath | String | 可选   | 预训练基底模型对应路径 | /sixpen_models/chatlm3                             | 预缓存的开源模型路径                  |
+| runCommand          | String | 可选   | 训练启动命令      | python run.py                                      |                             |
+| callbackUrl         | String | 可选   | 回调接口url     | [https://domain/callback](https://domain/callback) | 任务完成或失败时算想云会调用回调接口来通知用户     |
+| env                 | Json   | 可选   | 环境变量参数      | {\"OPEN_NODE_TOKEN\": \"xxxxx\"}                   | 环境变量会作用于训练任务pod中，由用户自行设置和使用 |
 
 http状态返回代码
 
