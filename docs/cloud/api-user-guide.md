@@ -9,13 +9,15 @@
 ### 创建用户
 
 访问算想云首页 [https://llm.sxwl.ai](https://llm.sxwl.ai)，完成注册并登录。
-<img src="../images/api-login.png" width="800" alt="api-login" />
+
+<img src={require('../images/api-login.png').default} style={{width: 800}} />
 
 ### 获取API Token
 
 注册登录成功后，用户邮箱会收到Access Key（即为API Token）邮件（如下图），所有算想云API请求需在header中携带token。
 
-<img src="../images/api-token.jpg" width="800" alt="api-token" />
+<img src={require('../images/api-token.jpg').default} style={{width: 800}} />
+
 
 API请求Header示例：
 
@@ -29,7 +31,7 @@ API请求Header示例：
 
 流程图：
 
-<img src="../images/api-flow.png"  width="800" alt="api-flow" />
+<img src={require('../images/api-flow.png').default} style={{width: 800}} />
 
 ## API文档
 
