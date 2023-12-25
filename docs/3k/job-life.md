@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# 三千平台任务生命周期
+# 任务生命周期
 ![集群状态](../images/job-life.png)
 
 ## 接收任务
