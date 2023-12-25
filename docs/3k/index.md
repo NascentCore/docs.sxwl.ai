@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# 三千平台
+# 算想三千
 
 <div style={{'text-align': 'left'}}>
     <img src={require('../images/3k-logo.png').default} style={{width: 300}} />
@@ -13,6 +13,6 @@ sidebar_position: 1
 2. 运行千亿参数规模 Transformer 大模型
 3. 支持千小时以上无人干预稳定训练
 
-- [三千平台架构](./3k-arch)
-- [三千平台安装部署指南](./deployment)
-- [三千平台任务生命周期](./job-life)
+- [算想三千平台架构](./3k-arch)
+- [算想三千安装部署指南](./deployment)
+- [算想三千任务生命周期](./job-life)
