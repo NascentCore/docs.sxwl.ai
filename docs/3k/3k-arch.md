@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# 三千平台架构
+# 系统架构
 
 ## 三千平台总体层次架构图
 ![总体层次架构图](../images/3k-arch1.png)
