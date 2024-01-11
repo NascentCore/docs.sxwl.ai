@@ -16,3 +16,4 @@ sidebar_position: 1
 - [算想三千平台架构](./3k-arch)
 - [算想三千安装部署指南](./deployment)
 - [算想三千任务生命周期](./job-life)
+- [llama-2-7b微调训练及部署示例](./llama-2-7b)
