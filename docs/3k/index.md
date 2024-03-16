@@ -8,7 +8,7 @@ sidebar_position: 1
     <img src={require('../images/3k-logo.png').default} style={{width: 300}} />
 </div>
 
-算想未来三“千”平台是训推一体大模型计算平台，得名于该平台的 3 个核心技术指标：
+算想三“千”是训推一体大模型计算平台，得名于该平台的 3 个核心技术指标：
 1. 管理千卡 GPU 集群
 2. 运行千亿参数规模 Transformer 大模型
 3. 支持千小时以上无人干预稳定训练
